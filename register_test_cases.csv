@@ -1,0 +1,27 @@
+Test ID,Title,Precondition,Steps,Expected Result,Priority,Notes
+TC-01,Open Register Page,Browser open,"1. Navigate to https://demo.guru99.com/test/newtours/index.php
+2. Click 'REGISTER' link",Register page loads and registration form is visible,High,
+TC-02,Required Fields Validation,On Register page,"1. Leave all fields blank
+2. Click 'Submit'",Show validation errors / required field messages or page rejects submission,High,If site doesn't show inline errors, verify no success message
+TC-03,Valid Registration,On Register page,"1. Fill all mandatory fields with valid data (unique username)
+2. Click 'Submit'",Registration success message with username shown,High,Use unique username each run
+TC-04,Invalid Email Format,On Register page,"1. Enter invalid email (e.g., 'user-at-example') in Email field
+2. Fill other required fields
+3. Click 'Submit'",Form rejects submission or shows email format error,Medium,Site may accept—record behavior
+TC-05,Password Mismatch,On Register page,"1. Enter different values in Password and Confirm Password
+2. Fill other required fields
+3. Click 'Submit'",Form rejects submission or shows password mismatch error,High,Verify no account created
+TC-06,Minimum Field Lengths,On Register page,"1. Enter very short values in First/Last name and username
+2. Fill other fields
+3. Click 'Submit'",Either accept or show validation; record constraints,Low,Document accepted min lengths
+TC-07,Country Dropdown,On Register page,"1. Open Country dropdown
+2. Select a country (e.g., 'UNITED STATES')",Selected country is set in the form,Low,Verify value submitted in success page
+TC-08,Special Characters in Username,On Register page,"1. Use username with special chars (e.g., 'user!@#')
+2. Fill other fields
+3. Click 'Submit'",Check if registration accepted or rejected,Medium,Record allowed characters
+TC-09,Duplicate Username,On Register page,"1. Use an existing username
+2. Fill other fields
+3. Click 'Submit'",Registration fails with duplicate/username-taken message,High,May require manual setup of existing username
+TC-10,Contact Fields Persistence,On Register page,"1. Fill contact fields (Phone, Email)
+2. Refresh page or navigate back to Register
+3. Re-open Register page",Fields should be empty or persisted depending on expected behavior,Low,Document observed behavior

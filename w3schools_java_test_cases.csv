@@ -1,0 +1,31 @@
+Test Case ID,Test Scenario,Test Steps,Expected Result,Priority,Status,Notes
+TC01,Page Load,Open https://www.w3schools.com/java/default.asp,Page loads successfully with HTTP 200 and Java tutorial home content visible,High,New,Check page title contains "Java Tutorial"
+TC02,Page Title,Open page and verify title,Title is "Java Tutorial" or contains "Java Tutorial | W3Schools",High,New,
+TC03,Main Heading Visibility,Open page and verify main heading text,Main heading "Java Tutorial" is visible,High,New,
+TC04,Navigation Menu Load,Open page and check top navigation menu,Top navigation menu items displayed and clickable,Medium,New,
+TC05,Left Sidebar Presence,Open page and verify left sidebar content,Left sidebar displays Java tutorial links such as "Home", "Learn Java", "Examples", "Exercises",Medium,New,
+TC06,Content Section Presence,Open page and scroll to main content,Main sections like "Java is a programming language", "Java Examples", "Try it Yourself" are present,High,New,
+TC07,Try it Yourself Button,Click "Try it Yourself" for first Java example,New tab/window opens with Tryit Editor and code loaded,High,New,
+TC08,Example Code Visibility,Open page and verify sample code examples are visible,Sample code blocks are displayed and formatted correctly,Medium,New,Check at least one code block appears
+TC09,Internal Link Functionality,Click a Java tutorial subsection link from the left sidebar,Page navigates to the correct subsection without error,Medium,New,
+TC10,Search Field Availability,Open page and verify search input box appears,Search box is visible and can accept text,Low,New,
+TC11,Search Functionality,Type "Java string" in search and submit,Search results or suggestions relevant to Java string topic appear,Low,New,
+TC12,Footer Links,Scroll to footer and click "About W3Schools",Footer link opens correct page,Low,New,Repeat for "Contact" or "Privacy" links if available
+TC13,Responsive Layout,Resize browser to mobile width and reload page,Page content reflows and navigation adapts for mobile,Medium,New,
+TC14,Broken Links,Scan all visible tutorial links on page,No broken links; all link URLs return HTTP 200,Medium,New,Focus on left menu and main examples
+TC15,Browser Compatibility,Open page in Chrome and Firefox,Page renders without critical layout or script errors,Medium,New,Record browser versions
+TC16,Image Load,Verify any tutorial images load correctly,All images on page display with no broken image icon,Low,New,
+TC17,Java Version Notice,Verify page mentions Java version or features,Relevant Java version/feature information is present in content,Low,New,
+TC18,Accessibility Check,Inspect page for alt text on images and visible labels,Images have alt text and controls have accessible labels,Low,New,
+TC19,Page Scroll,Scroll to bottom of page,Page scrolls smoothly and no content is cut off,Low,New,
+TC20,Cookie Notice,Open page and verify cookie/privacy notice behavior,If notice appears it can be accepted or dismissed and does not obstruct content,Low,New,
+TC21,Link to Java Home,Click "Java Home" from left menu,Page navigates to Java homepage section or refreshed home content,Medium,New,
+TC22,Code Example Navigation,Click a code example link or section from the page,Page navigates to correct example or section anchor,Medium,New,Validate navigation anchor behavior
+TC23,Page Language Switch,If language switcher exists,select another language or region,Page loads localized content or language options are available,Low,New,
+TC24,Page Metadata,Inspect page source for meta description and OG tags,Meta tags exist and describe Java tutorial content,Low,New,
+TC25,Load Time,Measure page load time under normal conditions,Page loads within acceptable threshold (e.g. < 5s),Medium,New,
+TC26,Cookie Acceptance,Accept cookies if notice appears,Notice closes and content remains accessible,Low,New,
+TC27,Text Content Validation,Verify common Java tutorial text is present,"Java is a programming language" text is present,High,New,
+TC28,Tryit Editor Launch,Click "Try it Yourself" for a second example,Tryit Editor opens and code can be edited,Medium,New,Confirm editor loads with sample Java code
+TC29,Error Page Handling,Modify URL to invalid page or typo,Server returns 404 or redirect gracefully without full site failure,Low,New,Example: https://www.w3schools.com/java/invalid.asp
+TC30,Page Security,Verify page uses HTTPS,URL begins with https:// and secure lock icon appears,High,New,
